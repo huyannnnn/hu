@@ -2,34 +2,55 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<title>守株待兔</title>
+<title>守株待兔 - 美化版</title>
 <style>
     body {
-        font-family: Arial, sans-serif;
+        font-family: 'Arial', sans-serif;
         line-height: 1.6;
         margin: 0;
         padding: 20px;
-        background-color: #f4f4f4;
+        background-color: #f9f9f9;
+        color: #333;
+    }
+    h1 {
+        text-align: center;
+        color: #5a5a5a;
+        margin-bottom: 20px;
+    }
+    p, .keyframe p {
+        color: #555;
+    }
+    audio, video {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: 10px 0;
     }
     .keyframes {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        gap: 20px;
     }
     .keyframe {
         background: white;
         border: 1px solid #ddd;
-        border-radius: 5px;
-        margin: 10px;
-        padding: 15px;
+        border-radius: 8px;
+        padding: 20px;
         width: calc(50% - 20px);
-        box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        transition: transform 0.2s ease-in-out;
+    }
+    .keyframe:hover {
+        transform: scale(1.02);
     }
     .keyframe h2 {
         margin-top: 0;
-        font-size: 1.2em;
+        font-size: 1.4em;
+        color: #4CAF50;
     }
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
         .keyframe {
             width: 100%;
         }
@@ -38,11 +59,11 @@
 </head>
 <body>
 
-<h1 style="text-align:center;">守株待兔</h1>
+<h1>守株待兔</h1>
 
 <p>
-    <audio src="music.mp3" autoplay controls style="height: 40px; width: 66%;">
-                您的浏览器不支持 audio 元素。
+    <audio src="music.mp3" autoplay controls>
+        您的浏览器不支持 audio 元素。
     </audio>
 </p>
     
@@ -50,36 +71,38 @@
     <div class="keyframe">
         <h2>第一章：和谐宁静的农田</h2>
         <p>画面开始于一片繁忙的农田中，一位勤劳的农夫（主角）正在田间辛勤劳作。阳光明媚，微风轻拂，一切都显得那么和谐宁静。</p>
-        <video src="video1">
-            你的浏览器不支持html5的video标签
+        <video controls>
+            <source src="video1.mp4" type="video/mp4">
+            您的浏览器不支持 HTML5 视频。
         </video>
-
     </div>
     
     <div class="keyframe">
         <h2>第二章：意外的发生</h2>
         <p>突然，一只野兔从旁边的树林中冲出，慌不择路地奔跑着，结果一头撞上了田边的一棵树桩，当场毙命。</p>
-            <video src="video2">
-            你的浏览器不支持html5的video标签
-            </video>
+        <video controls>
+            <source src="video2.mp4" type="video/mp4">
+            您的浏览器不支持 HTML5 视频。
+        </video>
     </div>
     
     <div class="keyframe">
         <h2>第三章：分享奇遇</h2>
         <p>回到家中，农夫兴奋地向家人讲述了他的奇遇。</p>
-        <video src="video3">
-            你的浏览器不支持html5的video标签
+        <video controls>
+            <source src="video3.mp4" type="video/mp4">
+            您的浏览器不支持 HTML5 视频。
         </video>
     </div>
     
     <div class="keyframe">
         <h2>第四章：等待奇迹再现</h2>
         <p>农夫放弃了手中的农具，整天坐在那棵树桩旁边，眼睛盯着道路尽头。</p>
-        <video src="video4">
-            你的浏览器不支持html5的video标签
+        <video controls>
+            <source src="video4.mp4" type="video/mp4">
+            您的浏览器不支持 HTML5 视频。
         </video>
     </div>
-    
 </div>
 
 </body>
